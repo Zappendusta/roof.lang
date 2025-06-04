@@ -1,0 +1,9 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {}
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder}/.devcontainer/ssh,target=/root/.ssh,type=bind,consistency=cached"
+    ]
+}
