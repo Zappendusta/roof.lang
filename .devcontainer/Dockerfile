@@ -1,4 +1,4 @@
-from ubuntu:latest
+FROM mcr.microsoft.com/devcontainers/dotnet:9.0-bookworm
 
 # Install dependencies
 RUN apt-get update && \
@@ -6,4 +6,4 @@ RUN apt-get update && \
     nasm
 
 # Set the working directory
-WORKDIR /roof
+WORKDIR /workspace

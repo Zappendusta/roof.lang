@@ -1,9 +1,13 @@
 {
+    "name": "Roof is a great lang",
     "build": {
-        "dockerfile": "Dockerfile",
-        "args": {}
+        "dockerfile": "Dockerfile"
     },
     "mounts": [
-        "source=${localWorkspaceFolder}/.devcontainer/ssh,target=/root/.ssh,type=bind,consistency=cached"
+        "source=${localWorkspaceFolder}/,target=/workspace/,type=bind,consistency=cached"
+    ],
+    "runArgs": [
+        "--name",
+        "roof-dev-container"
     ]
 }
